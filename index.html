@@ -61,6 +61,16 @@
 
     <main>
       <section class="hero">
+        <iframe
+          width="640"
+          height="360"
+          src="https://www.youtube.com/embed/Oigl04-DUKs"
+          title="IWC Watchmaker assembles the Pilot’s Watch Performance Chronograph 41 (IW388309)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
         <div class="hero-content">
           <h1 class="hero-title">Timeless Precision</h1>
           <p class="hero-subtitle">Discover the art of fine watchmaking.</p>
@@ -72,41 +82,56 @@
         <h2 class="section-title">Featured Timepieces</h2>
         <div class="product-grid">
           <!-- Product Card 1 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
-              <img
-                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
-                alt="The Chronograph Watch"
-                class="product-image"
-              />
-              <h3 class="product-name">The Chronograph</h3>
-              <p class="product-price">$2,450</p>
-            </div>
-          </a>
+          <div
+            class="product-card"
+            data-name="The Chronograph"
+            data-price="$2,450"
+            data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+            data-description="A masterpiece of modern horology, The Chronograph features a robust stainless steel case, sapphire crystal glass, and a self-winding automatic movement. Perfect for those who appreciate precision and style."
+            data-specs='{"Case": "42mm Stainless Steel", "Movement": "Automatic Chronograph", "Water Resistance": "100m", "Strap": "Genuine Leather"}'
+          >
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
+              alt="The Chronograph Watch"
+              class="product-image"
+            />
+            <h3 class="product-name">The Chronograph</h3>
+            <p class="product-price">$2,450</p>
+          </div>
           <!-- Product Card 2 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
-              <img
-                src="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=500&q=80"
-                alt="The Minimalist Watch"
-                class="product-image"
-              />
-              <h3 class="product-name">The Minimalist</h3>
-              <p class="product-price">$1,800</p>
-            </div>
-          </a>
+          <div
+            class="product-card"
+            data-name="The Minimalist"
+            data-price="$1,800"
+            data-image="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=800&q=80"
+            data-description="Embodying 'less is more', The Minimalist features a clean dial, a slender case, and an uncluttered design. Its quartz movement ensures reliable and precise timekeeping."
+            data-specs='{"Case": "40mm Polished Steel", "Movement": "Swiss Quartz", "Water Resistance": "50m", "Strap": "Mesh Steel"}'
+          >
+            <img
+              src="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=500&q=80"
+              alt="The Minimalist Watch"
+              class="product-image"
+            />
+            <h3 class="product-name">The Minimalist</h3>
+            <p class="product-price">$1,800</p>
+          </div>
           <!-- Product Card 3 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
-              <img
-                src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=500&q=80"
-                alt="The Diver Watch"
-                class="product-image"
-              />
-              <h3 class="product-name">The Diver</h3>
-              <p class="product-price">$3,100</p>
-            </div>
-          </a>
+          <div
+            class="product-card"
+            data-name="The Diver"
+            data-price="$3,100"
+            data-image="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&q=80"
+            data-description="Built for the depths, The Diver is a rugged and reliable companion for any adventure. With a unidirectional rotating bezel and superior lume, it's ready for the darkest waters."
+            data-specs='{"Case": "44mm Titanium", "Movement": "Automatic", "Water Resistance": "300m", "Strap": "Rubber"}'
+          >
+            <img
+              src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=500&q=80"
+              alt="The Diver Watch"
+              class="product-image"
+            />
+            <h3 class="product-name">The Diver</h3>
+            <p class="product-price">$3,100</p>
+          </div>
         </div>
       </section>
 
@@ -142,5 +167,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="product-modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-body">
+          <!-- Content will be injected by JavaScript -->
+        </div>
+      </div>
+    </div>
   </body>
 </html>
