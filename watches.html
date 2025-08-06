@@ -4,14 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome for Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -20,7 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <script src="script.js" defer></script>
-    <title>E-Commerce Store</title>
+    <title>Our Watches - Horo Watches</title>
   </head>
   <body>
     <header class="main-header">
@@ -60,20 +58,15 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-title">Timeless Precision</h1>
-          <p class="hero-subtitle">Discover the art of fine watchmaking.</p>
-          <a href="watches.html" class="btn btn-primary">Explore Collection</a>
-        </div>
+      <section class="page-header">
+        <h1>The Full Collection</h1>
       </section>
 
-      <section id="featured" class="featured-products hidden">
-        <h2 class="section-title">Featured Timepieces</h2>
+      <section class="featured-products hidden">
         <div class="product-grid">
-          <!-- Product Card 1 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
+          <!-- This grid can be expanded with more products -->
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
               <img
                 src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
                 alt="The Chronograph Watch"
@@ -81,11 +74,10 @@
               />
               <h3 class="product-name">The Chronograph</h3>
               <p class="product-price">$2,450</p>
-            </div>
-          </a>
-          <!-- Product Card 2 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
+            </div></a
+          >
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
               <img
                 src="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=500&q=80"
                 alt="The Minimalist Watch"
@@ -93,11 +85,10 @@
               />
               <h3 class="product-name">The Minimalist</h3>
               <p class="product-price">$1,800</p>
-            </div>
-          </a>
-          <!-- Product Card 3 -->
-          <a href="product.html" class="product-card-link">
-            <div class="product-card">
+            </div></a
+          >
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
               <img
                 src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=500&q=80"
                 alt="The Diver Watch"
@@ -105,29 +96,41 @@
               />
               <h3 class="product-name">The Diver</h3>
               <p class="product-price">$3,100</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="philosophy-section hidden">
-        <div class="philosophy-content">
-          <div class="philosophy-text">
-            <h2 class="section-title">A Legacy of Craftsmanship</h2>
-            <p>
-              At Horo, we believe a watch is more than a timepiece; it's a
-              testament to history, engineering, and personal style. Each watch
-              is assembled by hand, ensuring every detail meets our exacting
-              standards of excellence.
-            </p>
-            <a href="about.html" class="btn btn-secondary">Learn Our Story</a>
-          </div>
-          <div class="philosophy-image">
-            <img
-              src="https://images.unsplash.com/photo-1614999070232-350ce2879f3a?q=80&w=1974"
-              alt="Watchmaker at work"
-            />
-          </div>
+            </div></a
+          >
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1547996160-81dfa387245e?w=500&q=80"
+                alt="The Aviator Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Aviator</h3>
+              <p class="product-price">$2,900</p>
+            </div></a
+          >
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31c?w=500&q=80"
+                alt="The Classic Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Classic</h3>
+              <p class="product-price">$1,950</p>
+            </div></a
+          >
+          <a href="product.html" class="product-card-link"
+            ><div class="product-card">
+              <img
+                src="https://images.unsplash.com/photo-1587925358603-c2eea5305bbc?w=500&q=80"
+                alt="The Skeleton Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Skeleton</h3>
+              <p class="product-price">$4,500</p>
+            </div></a
+          >
         </div>
       </section>
     </main>
@@ -136,9 +139,13 @@
       <div class="footer-content">
         <p>&copy; 2024 Horo Watches. All Rights Reserved.</p>
         <div class="footer-socials">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
         </div>
       </div>
     </footer>
