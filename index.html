@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="navbar">
+      <nav class="navbar container">
         <a href="index.html" class="nav-logo">Horo</a>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -61,109 +61,131 @@
 
     <main>
       <section class="hero">
-        <iframe
-          width="640"
-          height="360"
-          src="https://www.youtube.com/embed/Oigl04-DUKs"
-          title="IWC Watchmaker assembles the Pilot’s Watch Performance Chronograph 41 (IW388309)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="video-background">
+          <iframe
+            src="https://www.youtube.com/embed/Oigl04-DUKs?autoplay=1&mute=1&loop=1&playlist=Oigl04-DUKs&controls=0&showinfo=0&autohide=1"
+            title="Promotional video for Horo watches showing craftsmanship"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="hero-content">
-          <h1 class="hero-title">Timeless Precision</h1>
-          <p class="hero-subtitle">Discover the art of fine watchmaking.</p>
-          <a href="watches.html" class="btn btn-primary">Explore Collection</a>
+          <div class="container">
+            <h1 class="hero-title">Timeless Precision</h1>
+            <p class="hero-subtitle">Discover the art of fine watchmaking.</p>
+            <a href="watches.html" class="btn btn-primary">Explore Collection</a>
+          </div>
         </div>
       </section>
 
       <section id="featured" class="featured-products hidden">
-        <h2 class="section-title">Featured Timepieces</h2>
-        <div class="product-grid">
-          <!-- Product Card 1 -->
-          <div
-            class="product-card"
-            data-name="The Chronograph"
-            data-price="$2,450"
-            data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
-            data-description="A masterpiece of modern horology, The Chronograph features a robust stainless steel case, sapphire crystal glass, and a self-winding automatic movement. Perfect for those who appreciate precision and style."
-            data-specs='{"Case": "42mm Stainless Steel", "Movement": "Automatic Chronograph", "Water Resistance": "100m", "Strap": "Genuine Leather"}'
-          >
-            <img
-              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
-              alt="The Chronograph Watch"
-              class="product-image"
-            />
-            <h3 class="product-name">The Chronograph</h3>
-            <p class="product-price">$2,450</p>
-          </div>
-          <!-- Product Card 2 -->
-          <div
-            class="product-card"
-            data-name="The Minimalist"
-            data-price="$1,800"
-            data-image="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=800&q=80"
-            data-description="Embodying 'less is more', The Minimalist features a clean dial, a slender case, and an uncluttered design. Its quartz movement ensures reliable and precise timekeeping."
-            data-specs='{"Case": "40mm Polished Steel", "Movement": "Swiss Quartz", "Water Resistance": "50m", "Strap": "Mesh Steel"}'
-          >
-            <img
-              src="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=500&q=80"
-              alt="The Minimalist Watch"
-              class="product-image"
-            />
-            <h3 class="product-name">The Minimalist</h3>
-            <p class="product-price">$1,800</p>
-          </div>
-          <!-- Product Card 3 -->
-          <div
-            class="product-card"
-            data-name="The Diver"
-            data-price="$3,100"
-            data-image="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800&q=80"
-            data-description="Built for the depths, The Diver is a rugged and reliable companion for any adventure. With a unidirectional rotating bezel and superior lume, it's ready for the darkest waters."
-            data-specs='{"Case": "44mm Titanium", "Movement": "Automatic", "Water Resistance": "300m", "Strap": "Rubber"}'
-          >
-            <img
-              src="#"
-              alt="The Diver Watch"
-              class="product-image"
-            />
-            <h3 class="product-name">The Diver</h3>
-            <p class="product-price">$3,100</p>
+        <div class="container">
+          <h2 class="section-title">Featured Timepieces</h2>
+          <div class="product-grid">
+            <!-- Product Card 1 -->
+            <article
+              class="product-card"
+              data-name="The Chronograph"
+              data-price="$2,450"
+              data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+              data-description="A masterpiece of modern horology, The Chronograph features a robust stainless steel case, sapphire crystal glass, and a self-winding automatic movement. Perfect for those who appreciate precision and style."
+              data-specs='{"Case": "42mm Stainless Steel", "Movement": "Automatic Chronograph", "Water Resistance": "100m", "Strap": "Genuine Leather"}'
+            >
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80"
+                alt="The Chronograph Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Chronograph</h3>
+              <p class="product-price">$2,450</p>
+            </article>
+            <!-- Product Card 2 -->
+            <article
+              class="product-card"
+              data-name="The Minimalist"
+              data-price="$1,800"
+              data-image="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=800&q=80"
+              data-description="Embodying 'less is more', The Minimalist features a clean dial, a slender case, and an uncluttered design. Its quartz movement ensures reliable and precise timekeeping."
+              data-specs='{"Case": "40mm Polished Steel", "Movement": "Swiss Quartz", "Water Resistance": "50m", "Strap": "Mesh Steel"}'
+            >
+              <img
+                src="https://images.unsplash.com/photo-1620625515032-6ed0a1433fb4?w=500&q=80"
+                alt="The Minimalist Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Minimalist</h3>
+              <p class="product-price">$1,800</p>
+            </article>
+            <!-- Product Card 3 -->
+            <article
+              class="product-card"
+              data-name="The Diver"
+              data-price="$3,100"
+              data-image="https://images.unsplash.com/photo-1612817159949-195b6eb9e31c?w=800&q=80"
+              data-description="Built for the depths, The Diver is a rugged and reliable companion for any adventure. With a unidirectional rotating bezel and superior lume, it's ready for the darkest waters."
+              data-specs='{"Case": "44mm Titanium", "Movement": "Automatic", "Water Resistance": "300m", "Strap": "Rubber"}'
+            >
+              <img
+                src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31c?w=500&q=80"
+                alt="The Diver Watch"
+                class="product-image"
+              />
+              <h3 class="product-name">The Diver</h3>
+              <p class="product-price">$3,100</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="philosophy-section hidden">
-        <div class="philosophy-content">
-          <div class="philosophy-text">
-            <h2 class="section-title">A Legacy of Craftsmanship</h2>
-            <p>
-              At Horo, we believe a watch is more than a timepiece; it's a
-              testament to history, engineering, and personal style. Each watch
-              is assembled by hand, ensuring every detail meets our exacting
-              standards of excellence.
-            </p>
-            <a href="about.html" class="btn btn-secondary">Learn Our Story</a>
-          </div>
-          <div class="philosophy-image">
-            <img
-              src="#"
-              alt="Watchmaker at work"
-            />
+        <div class="container">
+          <div class="philosophy-content">
+            <div class="philosophy-text">
+              <h2 class="section-title">A Legacy of Craftsmanship</h2>
+              <p>
+                At Horo, we believe a watch is more than a timepiece; it's a
+                testament to history, engineering, and personal style. Each watch
+                is assembled by hand, ensuring every detail meets our exacting
+                standards of excellence.
+              </p>
+              <a href="about.html" class="btn btn-secondary">Learn Our Story</a>
+            </div>
+            <div class="philosophy-image">
+              <img
+                src="https://images.unsplash.com/photo-1590072829934-346d460a0f47?w=800&q=80"
+                alt="Watchmaker carefully assembling a watch component"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <div class="footer-content">
-        <p>&copy; 2024 Horo Watches. All Rights Reserved.</p>
-        <div class="footer-socials">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html" class="nav-logo">Horo</a>
+            <p>&copy; 2024 Horo Watches. All Rights Reserved.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="watches.html">Watches</a></li>
+              <li><a href="new-arrivals.html">New Arrivals</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
